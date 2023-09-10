@@ -1,0 +1,15 @@
+.App {
+  text-align: center;
+}
+
+
+
+
+/* 
+Hi Neil, both App.css and index.css in my-app are doing the same job, I was wondering which will be a better file to put all css for components/pages
+New
+
+Neil Dino - Assistant Instructor  8:51 PM
+depends.  You would usually put index.css in the index.js and that would have the root css stuff (like fonts, master margins, master display, etc) then app.css would link to your app.js and that would have more specific css to the app like space between the header, footer, etc.  Then you can have more css files in each individual component
+8:51
+Also depending on what framework you are using you can make themeprovidors or makeStyles functions which are essentially css in javascript */

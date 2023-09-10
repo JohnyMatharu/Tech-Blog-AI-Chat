@@ -1,0 +1,33 @@
+
+#footer
+{
+    white-space: nowrap;
+    display: flex; 
+    align-items: center; 
+    flex-direction: row;
+    text-align: center;
+    height: 45px;
+    font-family: 'roboto';
+/* padding-left: 10%;   */
+/* padding-right: 10%;  */
+}
+
+.space
+{
+   width: 16.66%;
+  
+}
+@media only screen and (max-width: 890px)
+ and (min-device-width: 414px)
+{
+    .space
+      {
+           width: 25%;
+        
+      }
+    }
+
+    
+
+
+        /* all media queries have been checked */

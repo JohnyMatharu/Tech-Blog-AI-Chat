@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/Tech-Blog-AI-Chat/static/css/main.6a2fa0ee.chunk.css",
+    "main.js": "/Tech-Blog-AI-Chat/static/js/main.11b0cb2d.chunk.js",
+    "main.js.map": "/Tech-Blog-AI-Chat/static/js/main.11b0cb2d.chunk.js.map",
+    "runtime-main.js": "/Tech-Blog-AI-Chat/static/js/runtime-main.05e2c784.js",
+    "runtime-main.js.map": "/Tech-Blog-AI-Chat/static/js/runtime-main.05e2c784.js.map",
+    "static/css/2.0238416c.chunk.css": "/Tech-Blog-AI-Chat/static/css/2.0238416c.chunk.css",
+    "static/js/2.8e2b4c9f.chunk.js": "/Tech-Blog-AI-Chat/static/js/2.8e2b4c9f.chunk.js",
+    "static/js/2.8e2b4c9f.chunk.js.map": "/Tech-Blog-AI-Chat/static/js/2.8e2b4c9f.chunk.js.map",
+    "static/js/3.e4d316d0.chunk.js": "/Tech-Blog-AI-Chat/static/js/3.e4d316d0.chunk.js",
+    "static/js/3.e4d316d0.chunk.js.map": "/Tech-Blog-AI-Chat/static/js/3.e4d316d0.chunk.js.map",
+    "index.html": "/Tech-Blog-AI-Chat/index.html",
+    "static/css/2.0238416c.chunk.css.map": "/Tech-Blog-AI-Chat/static/css/2.0238416c.chunk.css.map",
+    "static/css/main.6a2fa0ee.chunk.css.map": "/Tech-Blog-AI-Chat/static/css/main.6a2fa0ee.chunk.css.map",
+    "static/js/2.8e2b4c9f.chunk.js.LICENSE.txt": "/Tech-Blog-AI-Chat/static/js/2.8e2b4c9f.chunk.js.LICENSE.txt",
+    "static/media/1.b653a956.jpeg": "/Tech-Blog-AI-Chat/static/media/1.b653a956.jpeg",
+    "static/media/2.cd06719c.jpeg": "/Tech-Blog-AI-Chat/static/media/2.cd06719c.jpeg",
+    "static/media/3.a96f49be.jpeg": "/Tech-Blog-AI-Chat/static/media/3.a96f49be.jpeg",
+    "static/media/4.ad53aca6.jpeg": "/Tech-Blog-AI-Chat/static/media/4.ad53aca6.jpeg",
+    "static/media/5.8c497fff.jpeg": "/Tech-Blog-AI-Chat/static/media/5.8c497fff.jpeg",
+    "static/media/mdb.css": "/Tech-Blog-AI-Chat/static/media/arrow_right.f7c6ac6d.svg",
+    "static/media/all.min.css": "/Tech-Blog-AI-Chat/static/media/fa-solid-900.eeccf4f6.woff",
+    "static/media/font-awesome.min.css": "/Tech-Blog-AI-Chat/static/media/fontawesome-webfont.f691f37e.woff",
+    "static/media/logo.6ce24c58.svg": "/Tech-Blog-AI-Chat/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.05e2c784.js",
+    "static/css/2.0238416c.chunk.css",
+    "static/js/2.8e2b4c9f.chunk.js",
+    "static/css/main.6a2fa0ee.chunk.css",
+    "static/js/main.11b0cb2d.chunk.js"
+  ]
+}
