@@ -1,25 +1,106 @@
-import React from 'react';
+import './chatPage.css';
+import React, { useState, Component } from 'react';
 import Icon from '../pictures/icon.jpg';
 import { MDBContainer, MDBRow, MDBCol } from "mdbreact";
 import $ from 'jquery';
-import './chatPage.css';
 import ScrollContainer from 'react-indiana-drag-scroll'
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faPaperPlane} from '@fortawesome/free-solid-svg-icons';
 
-export default function chatPage() {
+function getDate() {
+  const today = new Date();
+  const month = today.getMonth() + 1;
+  const year = today.getFullYear();
+  const date = today.getDate();
+  return `${month}/${date}/${year}`;
+}
 
-    return (
+
+const INITIAL_LIST = [
+];
+const INITIAL_LIST2 = [
+];
+const ChatPage = () => {
+  const [value, setValue] = React.useState('');
+  const [value1, setValue1] = React.useState('');
+  const [list, setList] = React.useState(INITIAL_LIST);
+  const [list1, setList1] = React.useState(INITIAL_LIST2);
+  const [time, setTime] = useState({
+    minutes: new Date().getMinutes(),
+    hours: new Date().getHours(),
+    seconds: new Date().getSeconds()})
+  const [currentDate, setCurrentDate] = useState(getDate());
+    
+  
+  
+  const handleChange = (event) => {
+    setValue(event.target.value);
+  };
+
+
+  const handleSubmit = (event) => {
+    if (value) {
+      setList(list.concat(value + " - " + new Date().getHours()+":"+new Date().getMinutes()+":"+new Date().getSeconds()));
+      // setList(list.concat());
+      // setList1(list1.concat(<br></br>));
+    
+      if (value === "1" || value === "account")
+    {
+      setList1(list1.concat("Please enter account number - " + new Date().getHours()+":"+new Date().getMinutes()+":"+new Date().getSeconds()));
+      // setList(list.concat());
+    
+    }
+   else if (value === "2" | value === "billing")
+    {
+      setList1(list1.concat("Please enter account number - " + new Date().getHours()+":"+new Date().getMinutes()+":"+new Date().getSeconds()));
+      // setList(list.concat());
+    
+    }
+    else if (value === "3" | value === "Shipment" | value === "shipment" | value === "Tracking" | value === "tracking" | value === "Shipment tracking" | value === "Shipment Tracking")
+    {
+      setList1(list1.concat("Please enter order number - " + new Date().getHours()+":"+new Date().getMinutes()+":"+new Date().getSeconds()));
+      // setList(list.concat());
+    
+    }
+    else 
+    {
+      setList1(list1.concat("Please try again - " + new Date().getHours()+":"+new Date().getMinutes()+":"+new Date().getSeconds()));
+      // setList(list.concat());
+    
+    }
+    
+    if (value === "change address")
+
+    {
+      setList1(list1.concat("Please login here https://www.maugny.com/ - " + new Date().getHours()+":"+new Date().getMinutes()+":"+new Date().getSeconds()));
+      // setList(list.concat());
+    
+    }
+
+  
+    }
+
+    setValue('');
+
+    event.preventDefault();
+  };
+
+ 
+    
+
+  return (
 
 <section>
 
 <MDBContainer>
-          <div className="backround">
+        <div className="backround">
 
 
 <div id= "chatContainer">
 
-  
+
 <div id="divLeft">
 
 <div id="divLeftOne">
@@ -37,68 +118,46 @@ export default function chatPage() {
 <div id="divRight">
 
 <div id="chatDiv">
+
+
+    <ScrollContainer>
+ 
+
+  <div>
+    
+      <div id = "chatDiv">
+      
+
+      <div id = "left"><div id = "roboChat"><h7>How can I help you today? Please type 1. Billing 2. Account 3. Shipment tracking - {currentDate}</h7></div>
+      {/* {list.map(item => ( */}
+        {/* <h7 style={{color : "white"}} key={item}>{item}<br></br></h7> */}
+      {/* ))} */}
+       
+       {list1.map(item1 => (
+        <div id = "roboChat"><h7 key={item1}>{item1}</h7></div>
+  //  <h7 key={item1}><img src={Icon}></img>{item1}<br></br></h7>
+      ))}
+       
+        </div>
+
+
+      <div id = "right"><div id = "roboChatInvisible"><h7>How can I help you today? Please type 1. Billing 2. Account 3. Shipment tracking - {currentDate}</h7></div>
+      {list.map(item => (
+     <div id = "roboChat1"><h7 key={item}>{item}</h7></div>
+      ))}
+
+      </div>
+      
+     
+
+
+      </div>
   
-  this is chat div
 
+  </div>
 
-      <ScrollContainer>
-   
+    </ScrollContainer>
 
-      I am currently building a card section which shows a horizontal list of cards. This list overflows, which makes the user have to scroll horizontally to view the offscreen cards.
-
-To make this process easier for the user, I want to create buttons which scroll the horizontal list to the left or right.
-
-I tried solving this by creating a reference to the horizontal list and apply a scrollX when I click on the previously mentioned button. This however, results in the following error:
-
-Cannot add property scrollX, object is not extensible
-M
-javascriptreactjsreact-hooks
-Share
-Improve this question
-Follow
-edited Mar 17, 2020 at 21:58
-skyboyer's user avatar
-skyboyer
-22.2k77 gold badges5757 silver badges6464 bronze badges
-asked Mar 17, 2020 at 20:41
-Jonathan Lauwers's user avatar
-Jonathan Lauwers
-25522 gold badges33 silver badges88 bronze badges
-Add a comment
-1 Answer
-Sorted by:
-
-Highest score (default)
-41
-
-In order to access a DOM Node with a Ref, you need to use ref.current; useRef is a container for a DOM node and you access that node with the current property.
-
-Additionally, scrollX is a read-only property; you need to call scrollLeft to change the scroll position. For scrollLeft to work, you need to add an overflow-x: scroll; rule to the style.projects for it to work. (If style.projects is an object than change to overflowX: 'scroll'.)
-
-To be able to scroll left or right, your can add a parameter to the function for the scroll offset, so it doesn't always scroll right:
-
-Share
-Improve this answer
-Follow
-edited Mar 18, 2020 at 3:22
-answered Mar 17, 2020 at 22:45
-litel's user avatar
-litel
-3,79033 gold badges2020 silver badges2929 bronze badges
-Is it also possible to make this scroll behaviour smooth? – 
-Jonathan Lauwers
- Mar 18, 2020 at 16:37
-4
-@JonathanLauwers You can add scroll-behavior: smooth; to the CSS for the style.projects but that isn't natively supported in Safari so you'd need some sort of polyfill like github.com/iamdustan/smoothscroll – 
-litel
- Mar 18, 2020 at 16:52
-Is this working? I tried it but not working as ittended – 
-Prieyudha Akadita S
- Mar 25 at 17:00
-
-
-      </ScrollContainer>
-  
 
 
 
@@ -107,51 +166,35 @@ Prieyudha Akadita S
 <div id="section1"></div>
 <div id="section2">
 
-<Form>
-      <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-        <Form.Control type="message" placeholder="Enter Message" />
-        <Button variant="primary" type="submit">
-        Submit
-      </Button>
-      </Form.Group>
-
-      {/* <Form.Group className="mb-3" controlId="formBasicPassword"> */}
-        {/* <Form.Control type="password" placeholder="Password" /> */}
-      {/* </Form.Group> */}
-
-      
-    </Form>
-    </div>
-    <div id="section3"></div>
+<form style={{fontSize : "15px"}} onSubmit={handleSubmit}>
+      <input type="text" maxlength="77" value={value} placeholder= "Enter Text" onChange={handleChange} />
+      {/*  */}
+  
+      <button style={{backgroundColor : "#0080ff", color: "white", fontSize: "15px"}} type="submit"><FontAwesomeIcon style={{color : "white", fontSize: "18px", marginTop: "5px"}} icon={faPaperPlane} /></button>
+    </form>
+  
+  
+  </div>
+  <div id="section3"></div>
 
 
 </div>
 
 
-
-
-
-
 </div>
-
-
-
-
-
-
-
-
 
 
 
 {/* thi is end of container */} 
-   </div>
+ </div>
 
-   {/* this is end of backround */}
-          </div>  
-    </MDBContainer >  
+ {/* this is end of backround */}
+        </div>  
+  </MDBContainer >  
 
 </section> 
 
-    )
-}
+  )
+};
+
+export default ChatPage;

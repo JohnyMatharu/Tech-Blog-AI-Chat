@@ -56,7 +56,7 @@ export default function Footer() {
        {/* Please note the this is lifted up in the air little bit, in order to fix this size has to be adjusted and make sure the
        the bottom is in line with icons and font size is same as other regular black text */}
        
-     <h6 style={{color: 'gray', fontSize: '18px', fontWeight: 'bolder', paddingBottom: '9px', fontFamily: 'roboto'}}>© 2023</h6>
+     <h6 style={{color: 'gray', fontSize: '18px', fontWeight: 'bolder', paddingBottom: '9px', fontFamily: 'roboto'}}>All Rights Reserved © 2023</h6>
        </div>
         </div>
     )
