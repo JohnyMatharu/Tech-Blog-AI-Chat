@@ -5,8 +5,8 @@ import './App.css';
 //import React, { useState } from "react";
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Footer from './components/footer';
+// import Navbar from './components/Navbar';
+// import Footer from './components/footer';
 import { HashRouter as Router } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faPaperPlane} from '@fortawesome/free-solid-svg-icons';
@@ -15,7 +15,6 @@ const App = () => {
   return (
   <div className="App">
 <Router>
-<Navbar></Navbar>
 <Route exact path='/' component={ChatPage} />
 <div>
       <Switch>
@@ -25,7 +24,7 @@ const App = () => {
       </Switch>
       </div>
       </Router>
-      <Footer></Footer>
+   
     </div>
 
   );
