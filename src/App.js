@@ -1,4 +1,6 @@
+
 import ChatPage from "./pages/ChatPage"
+// import Time from "./pages/test1.js"
 // import ChatPage2 from "./pages/ChatPage2"
 import logo from './logo.svg';
 import './App.css';
@@ -16,9 +18,10 @@ const App = () => {
   <div className="App">
 <Router>
 <Route exact path='/' component={ChatPage} />
+{/* <Route exact path='/' component={Time} /> */}
 <div>
       <Switch>
-        
+      {/* <Route exact path='/test1' component={Time} /> */}
           <Route exact path='/ChatPage' component={ChatPage} />
       
       </Switch>
@@ -31,3 +34,4 @@ const App = () => {
 }
 
 export default App;
+

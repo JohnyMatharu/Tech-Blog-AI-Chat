@@ -71,7 +71,7 @@
 
 img
 {
-width: 63%;
+width: 53%;
 
 }
 
@@ -152,13 +152,13 @@ button{
 
 #roboChat1
 {
-  border: 3px solid darkgray;
-  background-color: darkgray;
+  border: 3px solid #ECEFF8;
+  background-color: #ECEFF8;
   font-weight: bolder;
-  color: white;
-  margin-bottom: 51px;
+  color: #0080ff;
+  /* margin-bottom: 51px; */
   border-radius: 10px;
-  font-size: 24px;
+  font-size: 15px;
   margin-left: 13.5px;
   margin-right: 13.5px;
 }
@@ -168,13 +168,13 @@ button{
   {
     #roboChat1
     {
-    border: 3px solid darkgray;
-    background-color: darkgray;
-    font-weight: bolder;
-    color: white;
-    margin-bottom: 51px;
+      border: 3px solid #ECEFF8;
+      background-color: #ECEFF8;
+      font-weight: bolder;
+      color: #0080ff;
+    /* margin-bottom: 51px; */
     border-radius: 10px;
-    font-size: 24px;
+    font-size: 15px;
   
   }
     }
@@ -192,28 +192,49 @@ button{
   margin-right: 13.5px;
 }
 
+#first 
+{
+
+ color: gray;
+ font-size: 12px; 
+ padding-left: 99px;
+
+}
+
+#second
+{
+  color: gray; 
+  font-size: 12px; 
+  padding-left: 201px;
+}
+
+  @media only screen and (max-width: 890px)
+  and (min-device-width: 414px)
+  {
+    #first
+      {
+        color: gray;
+        font-size: 12px; 
+        padding-left: 51px;
+      }
+    }
 
 
-  /* @media only screen and (max-width: 890px) */
-  /* and (min-device-width: 414px) */
-  /* { */
-    /* #chatContainer */
-      /* { */
-   /* font-size: 18px; */
-   /* font-family: 'roboto'; */
-   /* height: 678px; */
-   /* width: 100%; */
-   /* display: flex;  */
-   /* align-items: center;  */
-   /* justify-content: space-between; */
-   /* flex-wrap: wrap; */
-   /* white-space: nowrap; */
-   /* flex-direction: row; */
-   /* justify-content: center; */
-   /* border-radius: 1.8%; */
-   /* border: 10px solid #0080ff;      */
-      /* } */
-    /* } */
+    @media only screen and (max-width: 890px)
+    and (min-device-width: 414px)
+    {
+      #second
+        {
+          color: gray; 
+          font-size: 12px; 
+          padding-left: 153px;
+        }
+      }
+
+
+
+
+
 
 #divLeft
 {
@@ -344,7 +365,7 @@ a
 }
 #divLeftTwo
 {
-  padding-top: 24px;
+  padding-top: 21px;
   height: 40%;
   width: 100%;
   
