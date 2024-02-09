@@ -1,30 +1,30 @@
 {
   "files": {
-    "main.css": "/Tech-Blog-AI-Chat/static/css/main.eb73f822.chunk.css",
-    "main.js": "/Tech-Blog-AI-Chat/static/js/main.3c23ff8e.chunk.js",
-    "main.js.map": "/Tech-Blog-AI-Chat/static/js/main.3c23ff8e.chunk.js.map",
-    "runtime-main.js": "/Tech-Blog-AI-Chat/static/js/runtime-main.eb6f3bb9.js",
-    "runtime-main.js.map": "/Tech-Blog-AI-Chat/static/js/runtime-main.eb6f3bb9.js.map",
+    "main.css": "/Tech-Blog-AI-Chat/static/css/main.4d3fc281.chunk.css",
+    "main.js": "/Tech-Blog-AI-Chat/static/js/main.3e0ebcda.chunk.js",
+    "main.js.map": "/Tech-Blog-AI-Chat/static/js/main.3e0ebcda.chunk.js.map",
+    "runtime-main.js": "/Tech-Blog-AI-Chat/static/js/runtime-main.4716e375.js",
+    "runtime-main.js.map": "/Tech-Blog-AI-Chat/static/js/runtime-main.4716e375.js.map",
     "static/css/2.4d803d25.chunk.css": "/Tech-Blog-AI-Chat/static/css/2.4d803d25.chunk.css",
-    "static/js/2.dd092485.chunk.js": "/Tech-Blog-AI-Chat/static/js/2.dd092485.chunk.js",
-    "static/js/2.dd092485.chunk.js.map": "/Tech-Blog-AI-Chat/static/js/2.dd092485.chunk.js.map",
-    "static/js/3.4af0b2ae.chunk.js": "/Tech-Blog-AI-Chat/static/js/3.4af0b2ae.chunk.js",
-    "static/js/3.4af0b2ae.chunk.js.map": "/Tech-Blog-AI-Chat/static/js/3.4af0b2ae.chunk.js.map",
+    "static/js/2.5955ccdb.chunk.js": "/Tech-Blog-AI-Chat/static/js/2.5955ccdb.chunk.js",
+    "static/js/2.5955ccdb.chunk.js.map": "/Tech-Blog-AI-Chat/static/js/2.5955ccdb.chunk.js.map",
+    "static/js/3.f0201ffa.chunk.js": "/Tech-Blog-AI-Chat/static/js/3.f0201ffa.chunk.js",
+    "static/js/3.f0201ffa.chunk.js.map": "/Tech-Blog-AI-Chat/static/js/3.f0201ffa.chunk.js.map",
     "index.html": "/Tech-Blog-AI-Chat/index.html",
     "static/css/2.4d803d25.chunk.css.map": "/Tech-Blog-AI-Chat/static/css/2.4d803d25.chunk.css.map",
-    "static/css/main.eb73f822.chunk.css.map": "/Tech-Blog-AI-Chat/static/css/main.eb73f822.chunk.css.map",
-    "static/js/2.dd092485.chunk.js.LICENSE.txt": "/Tech-Blog-AI-Chat/static/js/2.dd092485.chunk.js.LICENSE.txt",
+    "static/css/main.4d3fc281.chunk.css.map": "/Tech-Blog-AI-Chat/static/css/main.4d3fc281.chunk.css.map",
+    "static/js/2.5955ccdb.chunk.js.LICENSE.txt": "/Tech-Blog-AI-Chat/static/js/2.5955ccdb.chunk.js.LICENSE.txt",
     "static/media/mdb.css": "/Tech-Blog-AI-Chat/static/media/arrow_right.f7c6ac6d.svg",
     "static/media/all.min.css": "/Tech-Blog-AI-Chat/static/media/fa-solid-900.eeccf4f6.woff",
     "static/media/font-awesome.min.css": "/Tech-Blog-AI-Chat/static/media/fontawesome-webfont.f691f37e.woff",
-    "static/media/icon.6547fbc0.jpg": "/Tech-Blog-AI-Chat/static/media/icon.6547fbc0.jpg",
+    "static/media/icon.89ca25e9.png": "/Tech-Blog-AI-Chat/static/media/icon.89ca25e9.png",
     "static/media/logo.6ce24c58.svg": "/Tech-Blog-AI-Chat/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.eb6f3bb9.js",
+    "static/js/runtime-main.4716e375.js",
     "static/css/2.4d803d25.chunk.css",
-    "static/js/2.dd092485.chunk.js",
-    "static/css/main.eb73f822.chunk.css",
-    "static/js/main.3c23ff8e.chunk.js"
+    "static/js/2.5955ccdb.chunk.js",
+    "static/css/main.4d3fc281.chunk.css",
+    "static/js/main.3e0ebcda.chunk.js"
   ]
 }
